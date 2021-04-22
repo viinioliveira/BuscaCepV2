@@ -1,0 +1,24 @@
+<div class="container">
+
+  <div class="formulario" (click)="BuscaCordenadas()">
+    <form action="">
+      <h6>Digite seu cep:</h6>
+      <input type="number" id="cep" name="cep" [(ngModel)]="endereco.cep" (blur)="BuscaCep()">
+      <br>
+      <input type="text" id="logradouro" name="logradouro" placeholder="Rua" disabled [(ngModel)]="endereco.logradouro">
+      <br>
+      <input type="text" id="bairro" name="bairro" placeholder="Bairro" disabled [(ngModel)]="endereco.bairro">
+      <br>
+      <input type="text" id="cidade" name="cidade" placeholder="Cidade" disabled [(ngModel)]="endereco.cidade">
+      <br>
+      <input type="text" id="uf" name="uf" placeholder="UF" disabled [(ngModel)]="endereco.uf">
+      <br>
+    </form>
+  </div>
+</div>
+
+<div class=map>
+  <agm-map [latitude]="mapa.latitude" [longitude]="mapa.longitude" [zoom]="16">
+    <agm-marker [latitude]="mapa.latitude" [longitude]="mapa.longitude"></agm-marker>
+  </agm-map>
+</div>
