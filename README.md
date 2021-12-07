@@ -2,9 +2,9 @@ This project was generated with Angular CLI version 11.2.8.
 
 Requisitos para execução:
 
-- Node.JS
-- Angular CLi
-- Adicionar a pasta NodeModules a raiz do projeto
+- Node
+- npm install -g @angular/cli
+- npm install
 - execute ng serve --open
 - Projeto para aprendizado, consumindo as API's do ViaCep, GoogleMaps e MapBox
 
